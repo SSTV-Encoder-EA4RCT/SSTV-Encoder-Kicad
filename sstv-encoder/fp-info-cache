@@ -1,4 +1,4 @@
-16745887938219416
+16749057914841416
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -74430,6 +74430,20 @@ AD9850
 0
 20
 20
+sstv-encoder
+Adafruit_GPS
+
+
+0
+9
+9
+sstv-encoder
+AltIMU-10
+
+
+0
+5
+5
 sstv-encoder
 DRA818V
 
