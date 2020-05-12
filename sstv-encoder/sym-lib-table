@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name project-components)(type Legacy)(uri /home/acien101/gitRepos/SSTV-encoder-kicad/sstv-encoder/project-components.lib)(options "")(descr ""))
+  (lib (name project-components)(type Legacy)(uri /home/acien101/gitRepos/sstv/SSTV-encoder-kicad/sstv-encoder/project-components.lib)(options "")(descr ""))
 )

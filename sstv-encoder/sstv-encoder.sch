@@ -223,7 +223,7 @@ U 1 1 5E692722
 P 9450 8850
 F 0 "RV1" H 9381 8896 50  0000 R CNN
 F 1 "10K" H 9381 8805 50  0000 R CNN
-F 2 "Potentiometer_SMD:Potentiometer_Bourns_3214J_Horizontal" H 9450 8850 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-10-V10_Vertical" H 9450 8850 50  0001 C CNN
 F 3 "~" H 9450 8850 50  0001 C CNN
 	1    9450 8850
 	1    0    0    -1  
@@ -727,7 +727,7 @@ F 3 "" H 7350 2850 50  0001 C CNN
 	1    7350 2850
 	1    0    0    -1  
 $EndComp
-Text Notes 7600 2300 0    50   ~ 0
+Text Notes 7750 2300 0    50   ~ 0
 50 ohm
 $Comp
 L project-components:Adafruit_GPS_MTK3339 U3
@@ -824,17 +824,6 @@ Text Label 1700 2600 0    50   ~ 0
 TX_GPS
 Text Label 1700 2700 0    50   ~ 0
 RX_GPS
-$Comp
-L power:+3.3V #PWR03
-U 1 1 5E762D52
-P 6400 3800
-F 0 "#PWR03" H 6400 3650 50  0001 C CNN
-F 1 "+3.3V" H 6415 3973 50  0000 C CNN
-F 2 "" H 6400 3800 50  0001 C CNN
-F 3 "" H 6400 3800 50  0001 C CNN
-	1    6400 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3350 2350 4050 2350
 Text Label 4050 2350 0    50   ~ 0
@@ -842,34 +831,34 @@ AF_APRS
 Text Notes 1000 8200 0    50   ~ 0
 PWN SIGNAL CORRECTION - APRS
 $Comp
-L Device:C C?
+L Device:C C9
 U 1 1 5E8B30D2
 P 1300 8850
-F 0 "C?" V 1048 8850 50  0000 C CNN
-F 1 "C" V 1139 8850 50  0000 C CNN
-F 2 "" H 1338 8700 50  0001 C CNN
+F 0 "C9" V 1048 8850 50  0000 C CNN
+F 1 "1uF" V 1139 8850 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1338 8700 50  0001 C CNN
 F 3 "~" H 1300 8850 50  0001 C CNN
 	1    1300 8850
 	0    1    1    0   
 $EndComp
 $Comp
-L Amplifier_Operational:TL082 U?
+L Amplifier_Operational:TL082 U4
 U 1 1 5E8B35EC
 P 2600 8950
-F 0 "U?" H 2600 9317 50  0000 C CNN
+F 0 "U4" H 2600 9317 50  0000 C CNN
 F 1 "TL082" H 2600 9226 50  0000 C CNN
-F 2 "" H 2600 8950 50  0001 C CNN
+F 2 "Package_DIP:DIP-8-16_W7.62mm" H 2600 8950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 2600 8950 50  0001 C CNN
 	1    2600 8950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT RV?
+L Device:R_POT RV2
 U 1 1 5E8B8628
 P 1650 9150
-F 0 "RV?" H 1581 9196 50  0000 R CNN
+F 0 "RV2" H 1581 9196 50  0000 R CNN
 F 1 "10K" H 1581 9105 50  0000 R CNN
-F 2 "Potentiometer_SMD:Potentiometer_Bourns_3214J_Horizontal" H 1650 9150 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-10-V10_Vertical" H 1650 9150 50  0001 C CNN
 F 3 "~" H 1650 9150 50  0001 C CNN
 	1    1650 9150
 	1    0    0    -1  
@@ -898,10 +887,10 @@ Wire Wire Line
 Wire Wire Line
 	1650 8850 1450 8850
 $Comp
-L power:GNDREF #PWR?
+L power:GNDREF #PWR0124
 U 1 1 5E8EE923
 P 1650 9550
-F 0 "#PWR?" H 1650 9300 50  0001 C CNN
+F 0 "#PWR0124" H 1650 9300 50  0001 C CNN
 F 1 "GNDREF" H 1655 9377 50  0000 C CNN
 F 2 "" H 1650 9550 50  0001 C CNN
 F 3 "" H 1650 9550 50  0001 C CNN
@@ -914,49 +903,14 @@ Wire Wire Line
 	1150 8850 950  8850
 Text Label 950  8850 2    50   ~ 0
 AF_APRS
-Text Notes 4300 7800 0    50   ~ 0
+Text Notes 4650 8050 0    50   ~ 0
 ANALOG SIGNAL MULTIPLEXOR
-$Comp
-L 4xxx:4053 U?
-U 1 1 5E903E36
-P 6100 9150
-F 0 "U?" H 6100 9350 50  0000 C CNN
-F 1 "4053" H 6100 9250 50  0000 C CNN
-F 2 "" H 6100 9150 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf" H 6100 9150 50  0001 C CNN
-	1    6100 9150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 8550 5450 8550
-Wire Wire Line
-	5450 8550 5450 8400
-Wire Wire Line
-	5450 8400 5150 8400
-Wire Wire Line
-	5600 8650 5450 8650
-Wire Wire Line
-	5450 8650 5450 8800
-Wire Wire Line
-	5450 8800 5150 8800
 Text Label 3500 8950 0    50   ~ 0
 AF_APRS_NORM
-Text Label 5150 8400 2    50   ~ 0
-ZOUT_ADS
-Text Label 5150 8800 2    50   ~ 0
-AF_APRS_NORM
-Wire Wire Line
-	6600 8550 7000 8550
-Text Label 7000 8550 0    50   ~ 0
-AF_MUX
 Wire Wire Line
 	3350 2750 4050 2750
 Wire Wire Line
 	3350 2850 4050 2850
-Wire Wire Line
-	5600 9550 5150 9550
-Text Label 5150 9550 2    50   ~ 0
-MUX_SL
 Wire Wire Line
 	3350 2550 4050 2550
 Text Label 4050 2550 0    50   ~ 0
@@ -966,16 +920,145 @@ AF_MUX
 Text Notes 8950 7750 0    50   ~ 0
 AUDIO AMPLIFIER
 $Comp
-L power:+5V #PWR?
-U 1 1 5E9732EE
-P 6100 7900
-F 0 "#PWR?" H 6100 7750 50  0001 C CNN
-F 1 "+5V" H 6115 8073 50  0000 C CNN
-F 2 "" H 6100 7900 50  0001 C CNN
-F 3 "" H 6100 7900 50  0001 C CNN
-	1    6100 7900
+L Analog_Switch:DG419LDJ U5
+U 1 1 5E9644DF
+P 5850 8750
+F 0 "U5" H 5850 8992 50  0000 C CNN
+F 1 "DG419LDJ" H 5850 8901 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5850 8450 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DG417-DG419.pdf" H 5850 8550 50  0001 C CNN
+	1    5850 8750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 8850 6550 8850
+Wire Wire Line
+	5550 8750 5100 8750
+Wire Wire Line
+	5550 8950 5100 8950
+Text Label 5100 8750 2    50   ~ 0
+AF_APRS
+Text Label 5100 8950 2    50   ~ 0
+ZOUT_ADS
+Wire Wire Line
+	5850 9150 5850 9500
+Text Label 5850 9500 3    50   ~ 0
+MUX_SL
+Text Label 6550 8850 0    50   ~ 0
+AF_MUX
+Text Notes 9350 4100 0    50   ~ 0
+DC-DC INVERTER
+$Comp
+L Regulator_SwitchedCapacitor:LTC1044 U6
+U 1 1 5E99155A
+P 10300 5350
+F 0 "U6" H 10300 6000 50  0000 C CNN
+F 1 "LTC1044" H 10300 5900 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 10400 5250 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/lt1044.pdf" H 10400 5250 50  0001 C CNN
+	1    10300 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0125
+U 1 1 5E992017
+P 10300 6200
+F 0 "#PWR0125" H 10300 5950 50  0001 C CNN
+F 1 "GNDREF" H 10305 6027 50  0000 C CNN
+F 2 "" H 10300 6200 50  0001 C CNN
+F 3 "" H 10300 6200 50  0001 C CNN
+	1    10300 6200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 7900 6100 8250
+	10950 5650 10700 5650
+Wire Wire Line
+	10700 5250 11400 5250
+Wire Wire Line
+	11400 5250 11400 5650
+Wire Wire Line
+	11400 5650 11250 5650
+Wire Wire Line
+	10300 5850 10300 6200
+NoConn ~ 9900 5150
+NoConn ~ 9900 5550
+Wire Wire Line
+	10700 5050 10950 5050
+Text Label 11700 5050 0    50   ~ 0
+-VCC3.3
+$Comp
+L power:GNDREF #PWR0126
+U 1 1 5E9D05D1
+P 9350 5450
+F 0 "#PWR0126" H 9350 5200 50  0001 C CNN
+F 1 "GNDREF" H 9355 5277 50  0000 C CNN
+F 2 "" H 9350 5450 50  0001 C CNN
+F 3 "" H 9350 5450 50  0001 C CNN
+	1    9350 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 5350 9350 5450
+Wire Wire Line
+	9350 5350 9900 5350
+$Comp
+L Device:CP1 C10
+U 1 1 5E9D6BC0
+P 9350 5200
+F 0 "C10" H 9235 5154 50  0000 R CNN
+F 1 "10uF" H 9235 5245 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 9350 5200 50  0001 C CNN
+F 3 "~" H 9350 5200 50  0001 C CNN
+	1    9350 5200
+	-1   0    0    1   
+$EndComp
+Connection ~ 9350 5350
+Wire Wire Line
+	9350 5050 9350 4850
+Wire Wire Line
+	9350 4850 10950 4850
+Wire Wire Line
+	10950 4850 10950 5050
+Connection ~ 10950 5050
+Wire Wire Line
+	10950 5050 11700 5050
+$Comp
+L power:+3.3V #PWR0127
+U 1 1 5E9E3AE9
+P 9700 4750
+F 0 "#PWR0127" H 9700 4600 50  0001 C CNN
+F 1 "+3.3V" H 9715 4923 50  0000 C CNN
+F 2 "" H 9700 4750 50  0001 C CNN
+F 3 "" H 9700 4750 50  0001 C CNN
+	1    9700 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 4750 9700 5050
+Wire Wire Line
+	9700 5050 9900 5050
+$Comp
+L Device:CP1 C11
+U 1 1 5E9FBE03
+P 11100 5650
+F 0 "C11" V 10848 5650 50  0000 C CNN
+F 1 "10uF" V 10939 5650 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 11100 5650 50  0001 C CNN
+F 3 "~" H 11100 5650 50  0001 C CNN
+	1    11100 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E9EEABC
+P 6400 3750
+F 0 "#PWR?" H 6400 3600 50  0001 C CNN
+F 1 "+5V" H 6415 3923 50  0000 C CNN
+F 2 "" H 6400 3750 50  0001 C CNN
+F 3 "" H 6400 3750 50  0001 C CNN
+	1    6400 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3800 6400 3750
 $EndSCHEMATC
