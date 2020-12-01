@@ -847,7 +847,7 @@ U 1 1 5E8B35EC
 P 2600 8950
 F 0 "U4" H 2600 9317 50  0000 C CNN
 F 1 "TL082" H 2600 9226 50  0000 C CNN
-F 2 "Package_DIP:DIP-8-16_W7.62mm" H 2600 8950 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2600 8950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 2600 8950 50  0001 C CNN
 	1    2600 8950
 	1    0    0    -1  
@@ -937,7 +937,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 8950 5100 8950
 Text Label 5100 8750 2    50   ~ 0
-AF_APRS
+AF_APRS_NORM
 Text Label 5100 8950 2    50   ~ 0
 ZOUT_ADS
 Wire Wire Line
